@@ -1,38 +1,74 @@
-.App {
-  text-align: center;
+* {
+ margin: 0;
+ padding: 0;
+ border: 0;
+ box-sizing: border-box;
+ text-decoration: none;
+}
+body {
+  background: linear-gradient(120deg, #caffbf 0%, #a0c4ff 100%);
+  text-transform: capitalize;
+}
+.app_container {
+  width: 70%;
+  margin: 0 auto;
+  /* background: #76c893; */
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+h1,h2 {
+  text-align:center;
+  padding: 2rem;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+img{
+    display: block;
+    width: 100%;
+    object-fit: cover;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.car_card{
+  display: grid;
+  grid-template-columns: 65% 30%;
+  gap: 5%;
+  margin: 2rem;
 }
 
-.App-link {
-  color: #61dafb;
+.car_detail{
+  padding: 2rem 1rem;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.user_form {
+  display: grid;
+  gap: 2rem;
+}
+
+input,select {
+  width: 14rem;
+  padding: 0 0.5rem;
+  border: none;
+  outline: none;
+  background: #fff;
+  color: black;
+  cursor: pointer;
+  font-size: 20px;
+  margin: 0.3rem;
+}
+
+ table {
+   margin: 0 2rem;
+   text-align: left;
+ }
+
+ .btn { 
+    background: #34a0a4;
+    padding: 0.75rem 1.2rem;
+    margin: 0 auto 3rem;
+    border-radius:0.4rem;
+    cursor: pointer;
+    border: 1px solid var(--color-primary);
+    transition: var(--transition);
+}
+
+.btn:hover{
+  background:#168aad ;
 }
